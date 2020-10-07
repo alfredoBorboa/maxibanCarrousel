@@ -1,0 +1,94 @@
+body{
+  margin: 0;
+  padding:0;
+  background-image:url( ../img/fondo.jpg );
+  background-size:cover;
+  background-position:center;
+}
+
+canvas{
+  display: block;
+}
+
+.luz{
+  width:950px;
+  left:35px;
+  bottom:-40px;
+  position:absolute;
+}
+
+.btnLeft{
+  width:40px;
+  position:absolute;
+  bottom:40px;
+  left:50%;
+  transform: translate( -200%, 0% );
+  -moz-transform: translate( -200%, 0% );
+  -webkit-transform: translate( -200%, 0% );
+}
+
+.btnRight{
+  width:40px;
+  position:absolute;
+  bottom:40px;
+  left:50%;
+  transform: translate( 100%, 0% );
+  -moz-transform: translate( 100%, 0% );
+  -webkit-transform: translate( 100%, 0% );
+}
+
+.logoArriba{
+  position:absolute;
+  width:100px;
+  left:50%;
+  top:40px;
+  transform:translate( -50%, 0% );
+  -moz-transform:translate( -50%, 0% );
+  -webkit-transform:translate( -50%, 0% );
+}
+
+.pushDown1{
+  animation-name: down1;
+  animation-duration: 0.3s;
+}
+
+.pushDown2{
+  animation-name: down2;
+  animation-duration: 0.3s;
+}
+
+@keyframes down1{
+  0%{
+    transform: translate( -200%, 0% ) scale( 1.0 );
+    -moz-transform: translate( -200%, 0% ) scale( 1.0 );
+    -webkit-transform: translate( -200%, 0% ) scale( 1.0 );
+  }
+  50%{
+    transform: translate( -200%, 0% ) scale( 0.8 );
+    -moz-transform: translate( -200%, 0% ) scale( 0.8 );
+    -webkit-transform: translate( -200%, 0% ) scale( 0.8 );
+  }
+  100%{
+    transform: translate( -200%, 0% ) scale( 1.0 );
+    -moz-transform: translate( -200%, 0% ) scale( 1.0 );
+    -webkit-transform: translate( -200%, 0% ) scale( 1.0 );
+  }
+}
+
+@keyframes down2{
+  0%{
+    transform: translate( 100%, 0% ) scale( 1.0 );
+    -moz-transform: translate( 100%, 0% ) scale( 1.0 );
+    -webkit-transform: translate( 100%, 0% ) scale( 1.0 );
+  }
+  50%{
+    transform: translate( 100%, 0% ) scale( 0.8 );
+    -moz-transform: translate( 100%, 0% ) scale( 0.8 );
+    -webkit-transform: translate( 100%, 0% ) scale( 0.8 );
+  }
+  100%{
+    transform: translate( 100%, 0% ) scale( 1.0 );
+    -moz-transform: translate( 100%, 0% ) scale( 1.0 );
+    -webkit-transform: translate( 100%, 0% ) scale( 1.0 );
+  }
+}
